@@ -1,0 +1,260 @@
+#root{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+*, ::after,::before{
+    box-sizing: border-box;
+}
+
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+body{
+    font-size: 15px;
+    line-height: inherit;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+    font-weight: 400;
+    color: inherit;
+    font-family: pretendard, -apple-system, blinkmacsystemfont, system-ui, roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif;
+}
+
+.headerWrapper{
+    height: 56px;
+    text-align: center;
+}
+
+.headerContainer{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1280px;
+    height: 100%;
+}
+
+.header_button.header_back{
+    margin-left: -10px;
+}
+
+.header_botton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #495057;
+}
+
+.header_title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.loginApp{
+    margin: 24px auto 0;
+    padding: 0 16px;
+    max-width: 560px;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+.wadizLogo{
+    display: block;
+    margin-bottom: 48px;
+    width: 100%;
+    text-align: center;
+}
+
+.loginAction{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+.loginAction.autologin{
+    display: flex;
+    flex-direction: row;
+    height: 21px;
+}
+
+.checkBox_Wrap.checkBox_label{
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.checkBox_Wrap{
+    position: relative;
+    margin-right: 0;
+}
+.checkBox_Wrap.checkBox_input{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.checkBox_Wrap.checkBox_sm.checkBox_icon{
+    width: 16px;
+    height: 16px;
+}
+
+.checkBox_Wrap.checkBox_label.checkBox_icon{
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.checkBox_Wrap.checkBox_icon{
+    position: relative;
+    flex-shrink: 0;
+    transition-property: opacity, border-color, background-color;
+    transition-duration: .15s;
+    opacity: 1;
+    z-index: 1;
+    border: 1px solid #cdd3d8;
+    border-radius: 2px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.checkBox_Wrap.checkBox_label.checkBox_sm.checkbox_content{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.checkBox_Wrap.checkBox_label.checkbox_content{
+    display: inline-block;
+    color: #495057;
+}
+
+.loginFormBotton{
+    border: 1px solid #f2f4f6;
+    border-radius: 16px;
+    padding: 48px;
+}
+
+.authForm{
+    margin-top: -16px;
+}
+
+.form_field{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.textBlind{
+    position: absolute;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.input_wrap.input_container{
+    height: 48px;
+    min-height: 48px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.input_wrap{
+    display: block;
+    transition-property: border-color, background-color, color;
+    transition-duration: .15s;
+    outline: none;
+    border: 1px solid #dde2e6;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 0 16px;
+    width: 100%;
+    vertical-align: middle;
+    color: #212529;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+.text_wrap{
+    display: block;
+    position: relative;
+    
+}
+
+.text_wrap.text_container{
+    font-size: 16px;
+}
+
+.input_wrap .input_md{
+    height: 40px;
+    min-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.button_wrap.button_mint{
+    color: #00c4c4;
+}
+
+.button_wrap.button_block{
+    width: 100%;
+}
+
+.signSubButton{
+    margin-top: 24px;
+}
+
+.button_wrap{
+    position: relative;
+    height: 48px;
+    font-size: 16px;
+
+}
+
+.socialBotton{
+    margin-top: 12px;
+}
+.kakaoButton{
+    border-color: #fee500;
+    background-color: #fee500;
+}
+
+.naverBotton{
+    border-color: #00d337;
+    background-color: #00d337;
+    color: #fff;
+}
+
+.loginApp.signMessage{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 24px;
+    box-shadow: none;
+    background: none;
+    height: 53px;
+    text-align: center;
+    line-height: 53px;
+}
+

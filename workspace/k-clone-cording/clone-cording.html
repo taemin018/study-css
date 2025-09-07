@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>와디즈</title>
+    <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
+    <link rel="stylesheet" href="clone.css">
+</head>
+<body>
+    <div id="root"></div>
+    <div id="auth-app">
+        <header class="headerWrapper">
+            <div class="headerContainer">
+                <button class="header_button header_back" aria-label="이전페이지로 가기">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" class="WithProps_icon__3qe3p Button_icon__Q3h3a" style="height: 24px; width: 24px;"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.0757 2.57573L16.9243 3.42426L8.34851 12L16.9243 20.5757L16.0757 21.4243L6.65146 12L16.0757 2.57573Z" fill="#495057"></path></svg>
+                </button>
+                <span class="header_title"></span>
+                <button>
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" class="WithProps_icon__3qe3p SimpleHeader_button__1SI3j" style="height: 24px; width: 24px;"><path d="M21.6 7.67893L12 1.27893L2.40002 7.67893V21H3.60002V8.32115L12 2.72115L20.4 8.32115V21H21.6V7.67893Z" fill="#495057"></path><path d="M15.6 21V12.4H8.40002V21H9.60002V13.6H14.4V21H15.6Z" fill="#495057"></path></svg>
+                </button>
+            </div>
+        </header>
+        <section class="loginApp">
+            <div class="wadizLogo">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE1IiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTE1IDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTc5LjIzMDMgNC4zMTIxM0g4Mi4wOThWMzMuMjA1N0g3OS45MjM0Qzc4LjkzMDIgMzMuMTk4IDc4LjA0ODkgMzIuNTY3OSA3Ny43MjE2IDMxLjYzMTRDNzMuMjUxNCAzNC44NjY4IDY3LjE2NDggMzQuNzExMSA2Mi44NjY0IDMxLjI1MTRDNjAuMzA5MiAyOS4xNzg1IDU4LjkxNjIgMjUuOTk3IDU5LjEyODggMjIuNzE1QzU5LjQyODUgMTguNzUzMiA2MS45NjYyIDE1LjMwOTUgNjUuNjY1MSAxMy44NDU0QzY5LjM2NCAxMi4zODEzIDczLjU3NTMgMTMuMTUzNSA3Ni41MTIgMTUuODM0M1Y3LjAyNjQyQzc2LjUxMiA1LjUyNzM2IDc3LjcyOSA0LjMxMjEzIDc5LjIzMDMgNC4zMTIxM1pNNzAuNjY3OCAyOS41ODIxQzczLjkyIDI5LjQzNTMgNzYuNDQ0NSAyNi42OTYzIDc2LjMyMTggMjMuNDQ3OEM3Ni41MDM1IDIxLjMwODkgNzUuNDYzNSAxOS4yNSA3My42MzI4IDE4LjEyNDdDNzEuODAyMSAxNi45OTk0IDY5LjQ5MjcgMTYuOTk5NCA2Ny42NjIgMTguMTI0N0M2NS44MzEzIDE5LjI1IDY0Ljc5MTMgMjEuMzA4OSA2NC45NzMgMjMuNDQ3OEM2NC44NTA2IDI2LjcxMTUgNjcuMzk5NSAyOS40NTcxIDcwLjY2NzggMjkuNTgyMVpNNTYuODE4MyAzMy4yMDU3SDU0Ljc1MjRDNTMuNzQ5MiAzMy4yMDk1IDUyLjg1NCAzMi41NzczIDUyLjUyMzQgMzEuNjMxNEM0OC4wNTMyIDM0Ljg2NjggNDEuOTY2NiAzNC43MTExIDM3LjY2ODIgMzEuMjUxNEMzNS4xMTEgMjkuMTc4NSAzMy43MTggMjUuOTk3IDMzLjkzMDYgMjIuNzE1QzM0LjIwOTYgMTguNzI1NCAzNi43NTg4IDE1LjI1MDUgNDAuNDg0MSAxMy43ODE3QzQ0LjIwOTQgMTIuMzEyOSA0OC40NDgzIDEzLjExMTMgNTEuMzgxOCAxNS44MzQzQzUxLjUyMTcgMTQuNDk3OSA1Mi42MTk4IDEzLjQ2NDkgNTMuOTY0MSAxMy40MDVINTYuODE4M1YzMy4yMDU3Wk00NS4zODggMjkuNTgyMUg0NS40MTUyQzQ4LjY2NTQgMjkuNDM1NCA1MS4xODYxIDI2LjY5NCA1MS4wNTU2IDIzLjQ0NzhDNTEuMTc4MSAyMC4xOTY4IDQ4LjY0MzUgMTcuNDU5NSA0NS4zODggMTcuMzI3MUM0Mi4xMzI2IDE3LjQ1OTUgMzkuNTk3OSAyMC4xOTY4IDM5LjcyMDUgMjMuNDQ3OEMzOS41OTc4IDI2LjcwMTQgNDIuMTMwNSAyOS40NDI2IDQ1LjM4OCAyOS41ODIxWk0xMTMuMTgxIDEzLjQxODZWMTYuMjgyMUwxMDMuNTcyIDI4LjU3NzhIMTEzLjE2OFYzMy4yODcxSDk1LjQ5OVYzMC40MzcxTDEwNS4xMjIgMTguMTI3OEg5Ni4xMjQyVjE2LjEzMjhDOTYuMTI0MiAxNC42MzM4IDk3LjM0MTIgMTMuNDE4NiA5OC44NDI1IDEzLjQxODZIMTEzLjE4MVpNODkuMjQ3IDExLjE5MjhDODcuMzg1NSAxMS4xOTI4IDg1Ljg3NjQgOS42ODU5NyA4NS44NzY0IDcuODI3MTNDODUuODc2NCA1Ljk2ODMgODcuMzg1NSA0LjQ2MTQyIDg5LjI0NyA0LjQ2MTQyQzkxLjEwODYgNC40NjE0MiA5Mi42MTc3IDUuOTY4MyA5Mi42MTc3IDcuODI3MTNDOTIuNjE3NyA5LjY4NTk3IDkxLjEwODYgMTEuMTkyOCA4OS4yNDcgMTEuMTkyOFpNMjguNTYyIDEzLjQxODZIMzQuMTg4OEwyNy41ODM1IDMzLjIxOTNIMjEuOTQzMUwxNy41ODAzIDIwLjUxNjRMMTMuMjE3NSAzMy4yMTkzSDcuNTc3MTJMMC45ODUzNTIgMTMuNDE4Nkg2LjU5ODU1TDEwLjYwOCAyNS43MTQzTDE0LjAwNTggMTUuMjFDMTQuMzgyNCAxNC4xMzM5IDE1LjM5MjMgMTMuNDA3NCAxNi41MzM4IDEzLjM5MTRIMjAuNDc1MkwyNC41NTI2IDI1LjcxNDNMMjguNTYyIDEzLjQxODZaTTg2LjUyODggMzMuMjE5M0w4Ni40NzQ0IDE2LjEzMjhDODYuNDc0NCAxNC42MzM4IDg3LjY5MTQgMTMuNDE4NiA4OS4xOTI3IDEzLjQxODZIOTIuMDYwNVYzMy4yMTkzSDg2LjUyODhaIiBmaWxsPSIjMUQyMTI5Ii8+Cjwvc3ZnPgo=">
+            </div>
+            <div>
+                <div class="loginAction">
+                    <div class="autologin">
+                        <label class="checkBox_Wrap checkBox_sm checkBox_label">
+                            <input type="checkbox" class="checkbox_input">
+                            <span class="checkBox_icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="WithProps_icon__3qe3p Checkbox_removeIcon__3TRhb"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 11.4L22 11.4L22 12.6L2 12.6L2 11.4Z" fill="#495057"></path></svg>
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="WithProps_icon__3qe3p Checkbox_checkIcon__2vw7a"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.8485 6.84852L8.99999 19.697L2.15146 12.8485L3.84852 11.1515L8.99999 16.3029L20.1515 5.15146L21.8485 6.84852Z" fill="#495057"></path></svg>
+                            </span>
+                            <span class="checkbox_content">
+                                <span>로그인 유지</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="loginFormBotton">
+                    <form class="authForm">
+                        <div>
+                            <div class="form_field" data-test-id="emailField">
+                                <label class="textBlind">이메일</label>
+                                <div>
+                                    <input data-test-id="email" id="email" name="username" placeholder="이메일 입력" title="이메일 입력" type="text" class="input_wrap input_container" aria-invalid="false">
+                                </div>
+                            </div>
+                            <div class="form_field" data-test-id="passwordField">
+                                <label class="textBlind">비밀번호</label>
+                                <div class="text_wrap text_container text_right">
+                                    <label for="password"></label>
+                                    <div class="text_field">
+                                        <input data-test-id="password" name="password" maxlength="20" placeholder="비밀번호 입력" title="비밀번호 입력" id="password" type="password" class="input_wrap input_container" aria-invalid="false">
+                                        <button aria-label="비밀번호 보기" class="Button_button__oVUJk Button_lg__23fVZ Button_iconOnly__2nrDb iconButton TextField_endIcon__2iiwQ TextField_passwordIcon__miXP9" type="button"><span><span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="WithProps_icon__3qe3p"><path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" fill="#495057"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21.9999 12C20.5443 7.33923 16.6167 4 12 4C7.38322 4 3.45561 7.33923 2 12C3.45561 16.6608 7.38322 20 12 20C16.6167 20 20.5443 16.6608 21.9999 12ZM17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" fill="#495057"></path></svg></span></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input name="rememberme" id="rememberme" type="hidden" class="input_wrap input_md" aria-invalid="false" value="off">
+                        <button data-test-id="loginSubmitButton" class="button_wrap button_mint button_tint button_lg button_block signSubButton" type="submit">
+                            <span>
+                                <span>이메일로 로그인하기</span>
+                            </span>
+                        </button>
+                    </form>
+                    <button aria-label="카카오로 인증하기" class="button_wrap button_lg button_block kakaoButton socialBotton" type="button">
+                        <span>
+                            <span>
+                                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" class="artwork"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.9667 5.00132C11.2667 5.00132 4.16666 10.6013 4.16666 17.6013C4.16666 22.0013 7.06666 25.9013 11.3667 28.2013L10.1667 34.4013L16.9667 29.9013L19.9667 30.1013C28.6667 30.1013 35.7667 24.5013 35.7667 17.5013C35.7667 10.5013 28.6667 4.90132 19.9667 5.00132Z" fill="#3C1E1E"></path></svg>
+                                카카오로 시작하기
+                            </span>
+                        </span>
+                    </button>
+                    <button aria-label="네이버로 인증하기" class="button_wrap button_lg button_block naverBotton socialBotton" type="button">
+                        <span>
+                            <span>
+                                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" class="artwork"><path d="M25.346 20.9399L14.2232 5H5V34.765H14.654V18.8251L25.7768 34.765H35V5H25.346V20.9399Z" fill="white"></path></svg>
+                                네이버로 시작하기
+                            </span>
+                        </span>
+                    </button>
+                    <div class="signMessage">
+                        <p>
+                            <a href="https://account.wadiz.kr/find-password" data-test-id="findPasswordLink">아이디/비밀번호 찾기</a>
+                            <span class="dividerWrapper">
+                                <hr class="Divider_divider__1KFpg Divider_vertical__1rvQ0 undefined Divider_lightBG__3J1BX Divider_spacing3__3O57A AuthLoginApp_linkDivider__3P_pc">
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+        </section>
+    </div>
+</body>
+</html>
